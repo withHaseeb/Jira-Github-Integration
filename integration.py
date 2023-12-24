@@ -11,10 +11,10 @@ app = Flask(__name__)
 @app.route('/createJira', methods=['POST'])
 def createJira():
 
-    url = "https://withhaseeb.atlassian.net/rest/api/3/issue"
+    url = "https://<your address>.atlassian.net/rest/api/3/issue"
 
-    apitoken = "ATATT3xFfGF0bCxpoaeWjtckwn0Qx9h2wKGDP1exA_rG7IG5daTvTcodIvAuitY7iLYOuwd-idF_I_PC7-6VS9d2gs4qoFOAAy9DEOwbjIUQ36pGDtKsCQOMc0Xuqp0-2gYKOOEOfekZHAeI30XxOCvmHhA_l0ryVciKjVDW2HzydhIKv9TVPec=70EA7938"
-    auth = HTTPBasicAuth("with.haseeb@gmail.com", apitoken)
+    apitoken = "<your token>"
+    auth = HTTPBasicAuth("<mailid>", apitoken)
 
    
 
